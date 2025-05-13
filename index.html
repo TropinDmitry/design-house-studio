@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Design House - студия дизайна интерьеров. Создаём стильные и функциональные интерьеры."
+    />
+    <title>DESIGN HOUSE | Студия интерьеров</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">DESIGN HOUSE</div>
+          <div class="header__contacts">
+            <a href="tel:+78001234567">
+              <i class="fa fa-phone header__icon"></i> +7 (800) 123-45-67
+            </a>
+            <a href="mailto:hello@designhouse.ru">
+              <i class="fa fa-envelope header__icon"></i> example@designhouse.ru
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__image">
+            <img
+              src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800"
+              alt="Дизайн интерьера"
+              class="hero__img"
+            />
+          </div>
+          <div class="hero__form">
+            <h2 class="hero__title">Идеальный интерьер за 30 дней</h2>
+            <p class="hero__subtitle">
+              Оставьте заявку и получите бесплатный эскиз!
+            </p>
+            <form>
+              <div class="hero__group">
+                <input type="text" placeholder="Ваше имя" required />
+              </div>
+              <div class="hero__group">
+                <input type="email" placeholder="Почта" required />
+              </div>
+              <div class="hero__group">
+                <input type="tel" placeholder="Телефон" required />
+              </div>
+              <button type="submit" class="btn">Получить консультацию</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container">
+        <h3 class="promo__title">Скидка 20% на первый проект!</h3>
+        <p class="promo__text">До конца акции осталось:</p>
+        <div class="countdown" id="countdown">24:00:00</div>
+      </div>
+    </section>
+
+    <section class="tabs">
+      <div class="container">
+        <div class="tabs__header">
+          <h3 class="tabs__title">Выберите стиль интерьера</h3>
+          <p class="tabs__subtitle">
+            Мы создаём интерьеры в разных стилях, чтобы каждый клиент нашёл то,
+            что ему по душе
+          </p>
+        </div>
+
+        <div class="tab-buttons">
+          <button class="tab-btn tab--active" data-tab="tab1">
+            Скандинавский
+          </button>
+          <button class="tab-btn" data-tab="tab2">Лофт</button>
+          <button class="tab-btn" data-tab="tab3">Минимализм</button>
+        </div>
+
+        <div id="tab1" class="tab-content tab-content--active">
+          <div class="design">
+            <img
+              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800"
+              alt="Скандинавский стиль"
+              class="design__image"
+            />
+            <div class="design__features">
+              <h4 class="design__title">Скандинавский стиль</h4>
+              <ul class="design__features">
+                <li class="design__feature">Светлые натуральные материалы</li>
+                <li class="design__feature">Функциональность и простота</li>
+                <li class="design__feature">Максимум естественного света</li>
+                <li class="design__feature">Уютная атмосфера</li>
+              </ul>
+              <a href="#cta" class="design-features__btn btn"
+                >Хочу такой дизайн</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="tab2" class="tab-content">
+          <div class="design">
+            <img
+              src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800"
+              alt="Лофт"
+              class="design__image"
+            />
+            <div class="design__features">
+              <h4 class="design__title">Лофт</h4>
+              <ul class="design__features">
+                <li class="design__feature">Индустриальные элементы</li>
+                <li class="design__feature">Открытые коммуникации</li>
+                <li class="design__feature">Высокие потолки</li>
+                <li class="design__feature">Смелые акценты</li>
+              </ul>
+              <a href="#cta" class="design-features__btn btn"
+                >Хочу такой дизайн</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="tab3" class="tab-content">
+          <div class="design">
+            <img
+              src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800"
+              alt="Минимализм"
+              class="design__image"
+            />
+            <div class="design__features">
+              <h4 class="design__title">Минимализм</h4>
+              <ul class="design__features">
+                <li class="design__feature">Чистые линии и формы</li>
+                <li class="design__feature">Минимум деталей</li>
+                <li class="design__feature">Монохромная палитра</li>
+                <li class="design__feature">Простор и воздух</li>
+              </ul>
+              <a href="#cta" class="design-features__btn btn"
+                >Хочу такой дизайн</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <h2 class="process__title">Как мы работаем</h2>
+        <div class="process__steps">
+          <div class="step">
+            <div class="step__number">01</div>
+            <h3 class="step__title">Консультация</h3>
+            <p class="step__text">Обсуждаем ваши пожелания и идеи</p>
+          </div>
+
+          <div class="step">
+            <div class="step__number">02</div>
+            <h3 class="step__title">Замеры</h3>
+            <p class="step__text">Делаем точные замеры помещения</p>
+          </div>
+
+          <div class="step">
+            <div class="step__number">03</div>
+            <h3 class="step__title">Дизайн-проект</h3>
+            <p class="step__text">Создаем 3D-визуализацию интерьера</p>
+          </div>
+
+          <div class="step">
+            <div class="step__number">04</div>
+            <h3 class="step__title">Реализация</h3>
+            <p class="step__text">Воплощаем проект в жизнь</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="trust"
+      style="padding: 40px 0; text-align: center; background: var(--light)"
+    >
+      <div class="container">
+        <h2 class="trust__title">Наши партнёры</h2>
+        <div class="trust__badges">
+          <div class="trust__partner">
+            <img
+              src="https://img.icons8.com/?size=100&id=dru8p0Kdkqa6&format=png&color=000000"
+              alt="Architects Association"
+              class="trust__badge"
+            />
+            <span class="trust__name">IKEA</span>
+          </div>
+
+          <div class="trust__partner">
+            <img
+              src="https://iconlogovector.com/uploads/images/2025/03/lg-67da04fa47082-Gessi.webp"
+              alt="Design Award 2025"
+              class="trust__badge"
+            />
+            <span class="trust__name">GESSI</span>
+          </div>
+
+          <div class="trust__partner">
+            <img
+              src="https://iconlogovector.com/uploads/images/2024/11/lg-673203c62e3ec-Minotti.webp"
+              alt="Design Award 2025"
+              class="trust__badge"
+            />
+            <span class="trust__name">Minotti</span>
+          </div>
+
+          <div class="trust__partner">
+            <img
+              src="https://seeklogo.com/images/B/baxter-logo-7F77C46993-seeklogo.com.png"
+              alt="Top Studio 2025"
+              class="trust__badge"
+            />
+            <span class="trust__name">BAXTER</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">Отзывы наших клиентов</h2>
+        <div class="reviews__grid">
+          <div class="review">
+            <p class="review__text">
+              "Сайт, разработанный командой Design House, помог нам увеличить
+              продажи на 40% за первый месяц!"
+            </p>
+            <div class="review__reviewer">
+              <img
+                src="https://randomuser.me/api/portraits/women/8.jpg"
+                alt="avatar"
+              />
+              <div class="review__reviewer-info">
+                <strong class="review__name">Диана С.</strong>
+                <span class="review__position"
+                  >Владелец мебельной мастерской</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <p class="review__text">
+              "Design House смогли воплотить мои идеи в реальность. Особенно
+              понравилось, как они подобрали цветовую гамму и мебель. Всё
+              сделано качественно и в срок"
+            </p>
+            <div class="review__reviewer">
+              <img
+                src="https://randomuser.me/api/portraits/men/41.jpg"
+                alt="avatar"
+              />
+              <div class="review__reviewer-info">
+                <strong class="review__name">Даниил К.</strong>
+                <span class="review__position">Директор мебельного салона</span>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <p class="review__text">
+              "Рекомендую как надежного подрядчика. Сделали все быстро,
+              качественно и с учетом всех наших пожеланий"
+            </p>
+            <div class="review__reviewer">
+              <img
+                src="https://randomuser.me/api/portraits/men/24.jpg"
+                alt="avatar"
+              />
+              <div class="review__reviewer-info">
+                <strong class="review__name">Андрей О.</strong>
+                <span class="review__position">Дизайнер интерьеров</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <i class="fa fa-paint-brush"></i>
+          <strong>Индивидуальный подход</strong>
+          <p>
+            Мы создаем уникальные дизайны, учитывая ваши желания и образ жизни
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-tasks"></i>
+          <strong>Комплексные решения</strong>
+          <p>
+            Мы учитываем все аспекты: функциональность, стиль и эргономику
+            пространства
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-pagelines"></i>
+          <strong>Эргономичные материалы</strong>
+          <p>
+            Мы учитываем все аспекты: функциональность, стиль и эргономику
+            пространства
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-check-circle-o"></i>
+          <strong>Гарантия качества</strong>
+          <p>
+            Наша команда всегда на связи и готова внести изменения до полного
+            удовлетворения
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <h3 class="cta-title">Готовы создать свой идеальный интерьер?</h3>
+      <p class="cta-description">
+        Заполните форму, и наш менеджер свяжется с вами в течение 15 минут для
+        обсуждения вашего проекта!
+      </p>
+      <form class="cta-form">
+        <div class="form-group">
+          <input type="text" placeholder="Ваше имя" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Ваш email" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Телефон" required />
+        </div>
+        <button type="submit" class="btn">Запросить консультацию</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__social">
+          <a href="#" class="footer__link"><i class="fa fa-telegram"></i></a>
+          <a href="#" class="footer__link"><i class="fa fa-whatsapp"></i></a>
+          <a href="#" class="footer__link"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="footer__link"><i class="fa fa-vk"></i></a>
+        </div>
+        <p class="footer__copyright">2025 Design House</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.remove("tab--active"));
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((tab) => tab.classList.remove("tab-content--active"));
+
+          btn.classList.add("tab--active");
+          document
+            .getElementById(btn.dataset.tab)
+            .classList.add("tab-content--active");
+        });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          document.querySelector(e.target.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      const getHMS = (time) => {
+        const hours = Math.floor(time / 3600).toString().padStart(2, '0');
+        const minutes = Math.floor((time % 3600) / 60).toString().padStart(2, '0');
+        const seconds = (time % 60).toString().padStart(2, '0');
+
+        return `${hours}:${minutes}:${seconds}`;
+      }
+
+      const startCountdown = (userTimer) => {
+        let time = parseInt(userTimer) || 19 * 60 * 60 + 11;
+        const countdown = document.getElementById('countdown');
+
+        countdown.textContent = getHMS(time);
+
+        const timer = setInterval(() => {
+          countdown.textContent = getHMS(time)
+          localStorage.setItem('user-timer', time--);
+
+          if(time < 0) clearInterval(timer);
+        }, 1000);
+      };
+
+      let userTimer = localStorage.getItem("user-timer");
+
+      startCountdown(userTimer);
+    </script>
+  </body>
+</html>
